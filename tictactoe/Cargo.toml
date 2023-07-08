@@ -5,7 +5,7 @@ edition = "2021"
 description = "Probably? efficient tictactoe(no heap, modificable size) game backend/frontend cli, can be used for gui or idk"
 readme = "README.md"
 repository = "https://github.com/yotam5/tictactoe_rs"
-keywords = ["embedded", "tictactoe","no heap","rust"]
+keywords = ["embedded", "tictactoe","no_heap","rust"]
 license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
