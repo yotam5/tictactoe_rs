@@ -1,5 +1,5 @@
 [package]
-name = "tictactoe"
+name = "tictactoe-llem"
 version = "0.2.0"
 edition = "2021"
 description = "Probably? efficient tictactoe(no heap, modificable size) game backend/frontend cli, can be used for gui or idk"
