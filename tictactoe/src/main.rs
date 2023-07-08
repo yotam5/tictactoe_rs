@@ -1,5 +1,5 @@
 use std::io::{stdin, stdout, Write};
-use tictactoe::{board_manager::{BoardManager, GameState}, Move, constants::constants::BOARD_SIDE};
+use tictactoe_llem::{board_manager::{BoardManager, GameState}, Move, constants::constants::BOARD_SIDE};
 
 pub fn handle_input() -> Move {
     let mut input = String::new();
