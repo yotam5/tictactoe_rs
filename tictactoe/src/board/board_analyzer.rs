@@ -59,13 +59,13 @@ fn check_win_vertically(grid: &Grid) -> GameState {
         let mut counter: i32 = 0;
         
         for row in 0..BOARD_SIDE {
-            match grid[column][row].get_state() {
+            match grid[row][column].get_state() {
                 SquareState::X => counter += 1,
                 SquareState::O => counter -= 1,
                 _ => {}
             }
         }
-
+        println!("{}", counter);
         if counter == BOARD_SIDE as i32{
             return GameState::Winner(Player::PlayerX);
         }
