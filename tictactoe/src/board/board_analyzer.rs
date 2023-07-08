@@ -65,7 +65,6 @@ fn check_win_vertically(grid: &Grid) -> GameState {
                 _ => {}
             }
         }
-        println!("{}", counter);
         if counter == BOARD_SIDE as i32{
             return GameState::Winner(Player::PlayerX);
         }

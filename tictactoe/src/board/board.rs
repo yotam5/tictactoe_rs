@@ -5,8 +5,7 @@ use crate::square::square_state::{SquareState};
 
 type MyResult = Result<(), &'static str>;
 pub type Grid = [[Square;BOARD_SIDE ]; BOARD_SIDE];
-
-use std::fmt;
+use core::fmt;
 
 pub struct Board
 {
@@ -61,7 +60,7 @@ impl fmt::Display for Board
            for (column_idx, element) in row.iter().enumerate(){
                 cyclic_result_buff[column_idx] = element.get_display_char() as u8;
            }
-           let row_to_display = std::str::from_utf8(&cyclic_result_buff).unwrap();
+           let row_to_display = core::str::from_utf8(&cyclic_result_buff).unwrap();
            writeln!(f, "{}",row_to_display)?;
 
        }

@@ -102,8 +102,9 @@ impl BoardManager
         Ok(())
     }
 
-    pub fn show_board(&self)
+    pub fn get_board(&self) -> &Board
     {
-        println!("{}", self.board);
+        &self.board
     }
+
 }
